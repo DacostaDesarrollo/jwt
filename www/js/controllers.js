@@ -36,17 +36,17 @@ angular.module('starter.controllers', [])
   var self = this;
     self.login= function(){
       $auth.login({
-          email: self.email,
+          username: self.username,
           password: self.password
       })
       .then(function(response){
           // Si se ha logueado correctamente, lo tratamos aquí.
           // Podemos también redirigirle a una ruta
-          $location.path("/")
+          $location.path("/");
       })
       .catch(function(response){
           // Si ha habido errores llegamos a esta parte
-          console.log(response)
+          console.log(response);
           
           
       });

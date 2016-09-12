@@ -111,9 +111,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
     $authProvider.withCredentials = false;
     $authProvider.tokenRoot = null;
     $authProvider.baseUrl = '/';
-    $authProvider.loginUrl = 'http://localhost/server/';
-    $authProvider.signupUrl = 'http://localhost:8100/server/auth/signup';
-    $authProvider.unlinkUrl = 'http://localhost:8100/server/auth/unlink/';
+    $authProvider.loginUrl = 'http://localhost/smartsale/api/auth/login';
+    $authProvider.signupUrl = 'http://localhost/smartsale/api/auth/signup';
+    $authProvider.unlinkUrl = 'http://localhost/smartsale/api/auth/unlink/';
     $authProvider.tokenName = 'token';
     $authProvider.tokenPrefix = 'satellizer';
     $authProvider.tokenHeader = 'Authorization';
